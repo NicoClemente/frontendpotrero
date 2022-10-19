@@ -30,7 +30,7 @@ body img {
 }
 
 body{
-    background: url(/img/japon.jpg);
+    background: url(./img/japon.jpg);
     min-height: 100%;
     min-width: 1024;
     background-size: 100%;
