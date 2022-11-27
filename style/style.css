@@ -117,7 +117,6 @@ h2 {
     text-decoration: underline;
     font-size: 3rem; 
     color: beige;
-    /* margin-right: 28%; */
     font-style: italic;
     }
 h3 {
@@ -218,3 +217,30 @@ footer p {
     transform: scale(1.2);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .btn-wsp {
+      width: 63px;
+      height: 63px;
+      line-height: 66px;
+    }
+
+    @media (max-width: 768px) {
+        main h1 {
+          font-size: large;
+        }
+      
+        main h2 {
+          font-size: medium;
+        }
+        main h3 {
+            font-size: small;
+        }
+        main .content, li {
+            font-size: small;
+        }
+        iframe {
+          width: 50%;
+          height: auto;
+          margin: 0 25% 0 25%;
+        }
+    
