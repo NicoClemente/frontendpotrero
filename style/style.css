@@ -178,7 +178,8 @@ h3 {
 
 .content,
 li {
-    margin: 0 20vw 3vw 20vw;
+    width: 70%;
+    margin: 0 12% 0 15%;
     text-align: justify;
     color: beige;
 
@@ -435,7 +436,7 @@ footer button {
         box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, 0.523);
         transition: all .4s ease-in-out;
         padding: 5%;
-        margin-top: 5vw;
+        margin-top: 2vw;
     }
 
     footer button {
