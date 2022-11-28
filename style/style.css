@@ -1,3 +1,4 @@
+/* fuente */
 @font-face {
     font-family: hiromisake;
     src: url("../fonts/HIROMISAKE400.ttf")
@@ -659,6 +660,7 @@ footer p {
         margin-right: 15vw;
         margin-left: 15vw;
     }
+
 
     /* main */
 
