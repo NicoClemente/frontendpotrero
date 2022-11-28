@@ -208,14 +208,24 @@ li {
     transition: all 300ms ease;
 
 }
-
-.btn-wsp:hover {
-    transform: scale(1.2);
+/* cards */
+.card {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    background-color:#314652 ;
+    border-style: solid;
+    border-width: .4vw;
+    border-color: #314652;
+    box-shadow: .1vw .1vw .5vw .4vw rgba(0, 0, 0, .5);
+    text-align: center;
+    
+}
+.card-group {
+    margin: 1% 1% 4% 1%;
+    flex-direction: row;
+    align-items: center;
 }
 
-.copy {
-    width: 10%;
-}
 
 /* Pie de pagina */
 footer {
@@ -240,9 +250,6 @@ footer {
 footer p {
     width: 25%;
     text-align: center;
-    color: beige;
-    font-style: italic;
-    font-size: 1.6rem;
 }
 
 .redsocial {
@@ -270,14 +277,15 @@ footer p {
     transform: scale(1.2);
 }
 
-footer button {
-    width: 15vw;
+.btn {
+    width: 18vw;
     height: 7vw;
     background-color: #314652;
     color: #f1f1f1;
     font-family: hiromisake;
-    font-size: 1.5rem;
+    font-size: 2rem ;
     box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+    text-align: center;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 575px) {
@@ -397,7 +405,13 @@ footer button {
         margin: 0 10% 0 10%;
         height: 40vh
     }
-
+    /* card */
+    .card {
+        width: 40%;
+        margin: 0 30% 0 30%;
+        
+    }
+    
     /* footer */
     footer {
         align-items: center;
@@ -408,14 +422,6 @@ footer button {
     footer iframe {
         height: 20vh;
         ;
-    }
-
-    footer p {
-        width: 30%;
-        text-align: center;
-        color: beige;
-        font-style: italic;
-        font-size: 1rem;
     }
 
     .redsocial {
@@ -430,7 +436,7 @@ footer button {
         font-size: 1.3rem;
         width: 8vw;
         height: 8vw;
-        line-height: 8vw;
+        line-height: 5vw;
         text-align: center;
         background: #123950;
         color: #f1f1f1;
@@ -441,14 +447,17 @@ footer button {
         margin-top: 2vw;
     }
 
-    footer button {
+    .btn {
         width: 25vw;
         height: 10vw;
+        text-align: center;
         background-color: #123950;
         color: #f1f1f1;
         font-family: hiromisake;
         font-size: .8rem;
         box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+        
+    
     }
 
 
@@ -547,6 +556,12 @@ footer button {
         height: 50vh;
         margin: 0 10% 0 10%;
     }
+    /* card */
+    .card {
+        width: 40%;
+        margin: 0 30% 0 30%;
+        
+    }   
 
     /* footer */
     footer {
@@ -558,7 +573,7 @@ footer button {
         height: 20vh;
     }
 
-    footer button {
+    .btn {
         width: 20vw;
         height: 10vw;
         background-color: #314652;
@@ -570,10 +585,10 @@ footer button {
 
     .redsocial a {
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         width: 8vw;
         height: 8vw;
-        line-height: 8vw;
+        line-height: 6vw;
         text-align: center;
         background: #314652;
         color: #f1f1f1;
@@ -582,7 +597,9 @@ footer button {
         transition: all .4s ease-in-out;
         padding: .8vw;
     }
-
+    .redsocial {
+        flex-direction: row;
+    }
 
 }
 
@@ -673,7 +690,12 @@ footer button {
         height: 50vh;
         margin: 0 15% 0 15%;
     }
-
+    /* card */
+    .card {
+        width: 70%;
+        margin: 0 15% 0 15%;
+        
+    }   
     /* footer */
     footer {
         align-items: center;
@@ -681,22 +703,22 @@ footer button {
 
     }
 
-    footer button {
-        width: 20vw;
-        height: 10vw;
+    .btn {
+        width: 18vw;
+        height: 7vw;
         background-color: #314652;
         color: #f1f1f1;
         font-family: hiromisake;
-        font-size: 1rem;
+        font-size: 1.2rem;
         box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
     }
 
     .redsocial a {
         text-decoration: none;
         font-size: 2rem;
-        width: 6vw;
-        height: 6vw;
-        line-height: 6vw;
+        width: 7vw;
+        height: 7vw;
+        line-height: 5vw;
         text-align: center;
         background: #314652;
         color: #f1f1f1;
@@ -705,6 +727,8 @@ footer button {
         transition: all .4s ease-in-out;
         padding: 1vw;
     }
-
+    .redsocial {
+        flex-direction: row;
+    }
 
 }
