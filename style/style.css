@@ -1,47 +1,52 @@
 @font-face {
     font-family: hiromisake;
-    src: url(/fonts/HIRO\ MISAKE\ 400.ttf);
+    src: url(/fonts/HIRO\ MISAKE\ 400.ttf)
 }
 
 header {
-    
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     flex-direction: row;  
     width:100%;
-      
+    align-items: center;
 }
 
 .flex-item1 {
-    width: 20%;
+    width: 15%;
 }
 .logosushi{
-    width: 13%;
-    margin: 0 0 1vw 3vw;
+    width: 15%;
+    margin: 1%;
+    
     
 }
 .flex-item2 {
-    width: 60%;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
 }
-h1 {
+.flex-item2 h1 {
     font-family: hiromisake;
     color: beige ;
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: center; 
-   padding-top: 4.5vw;
-   padding-left: 5vw ;
-    
+}
+.flex-item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    flex-direction: column;
 }
 .flex-item3 a {
-    justify-content: center;
-	margin-top: 1vw;
-	margin-right: 3vw;
-    font-size: 2rem;
+    margin-top: 1vw;
+	margin-right: 1.5vw;
+    font-size: 1.8rem;
     text-decoration: none;
-    width: 3vw;
-    height: 3vw;
-    line-height: 3vw;
+    width: 5vw;
+    height: 5vw;
+    line-height: 5vw;
     text-align: center;
     background: #314652;
     color: #f1f1f1;
@@ -55,16 +60,12 @@ h1 {
     transform: scale(1.2);
 }
 
-.flex-item3 {
-    width: 20%;
-    padding-top: 5vw
-
-}
 nav {
     border-style: solid;
     border-width: .4vw; 
     border-color: #314652;
     box-shadow: .1vw .1vw .5vw .4vw rgba(0, 0, 0, .5);
+    justify-content: center;
     
     
 }
@@ -87,13 +88,14 @@ nav .links {
     margin-bottom: 3vw;
     margin-right: 15vw;
     margin-left: 15vw;
+    
 }
 .links a:hover {
     transform: scale(1.2);
 }
 
 main{
-    
+
     width: 100%;
 
 }
@@ -134,9 +136,10 @@ h3 {
 }
 #video {
     position: relative;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;}
+    width: 70%;
+    height: 80vh;
+    margin: 0 15% 0 15%;
+}
 
 .content, li {
     margin: 0 20vw 3vw 20vw;
@@ -149,30 +152,34 @@ h3 {
 
 }
 .btn-wsp {
-    position:fixed;
-    width:4vw;
-    height:4vw;
-    line-height: 4.3vw;
-    bottom:2.5vw;
-    right:2.5vw;
-    background:#25d366;
-    color:#FFF;
-    border-radius:5vw;
-    text-align:center;
-    font-size:2.8rem;
-    box-shadow: 0px 1vw 1vw rgba(0,0,0,0.3);
-    z-index:100;
-    transition: all .4s ease-in-out;
-}
+    
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        bottom: 25px;
+        right: 25px;
+        background: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: all 300ms ease;
+       
+    }
 .btn-wsp:hover {
     transform: scale(1.2);
+}
+.copy {
+    width: 10%;
 }
 
 /* Pie de pagina */
 footer {
-
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     border-style: solid;
     border-width: .4vw; 
@@ -181,30 +188,31 @@ footer {
 }
 footer iframe {
     width: 25%;
+    margin: 1%;
+}
+footer{ 
+    align-items: center;
 }
 footer p {
-    width: 15%;
-    margin: 7vw 5% 0 5% ;
-    text-align: left;
+    width: 25%;
+    text-align: center;
     color: beige;
     font-style: italic;
     font-size: 1.6rem;
-
 }
-.redsocial  {
+.redsocial {
     width:50%;
     display: flex;
-    justify-content: space-around;
-    margin: 7vw 0 0 0;
-    
+    justify-content:space-evenly;
+  
 }
       
 .redsocial a {
     text-decoration: none;
     font-size: 2rem;
-    width: 4vw;
-    height: 4vw;
-    line-height: 4vw;
+    width: 6vw;
+    height: 6vw;
+    line-height: 6vw;
     text-align: center;
     background: #314652;
     color: #f1f1f1;
@@ -216,31 +224,368 @@ footer p {
 .redsocial a:hover {
     transform: scale(1.2);
 }
-
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+footer button {
+    width: 10vw;
+    height: 5vw;
+    background-color:#314652 ;
+    color: #f1f1f1;
+    font-family: hiromisake;
+    font-size: 1.5rem;
+    box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+}
+@media only screen and (min-width: 280px) and (max-width: 476px) {
     .btn-wsp {
-      width: 63px;
-      height: 63px;
-      line-height: 66px;
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
     }
 
-    @media (max-width: 768px) {
-        main h1 {
-          font-size: large;
+       /* header */
+        
+       .flex-item2 h1 {
+            font-size: 2rem;
+            font-family: hiromisake;
+            text-align: center;
+            
         }
-      
+        .flex-item1 {
+            width: 25%;
+        }
+        
+        .logosushi { 
+            height: auto;
+        
+            }
+        
+        .flex-item3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        header .flex-item3 a {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1.5rem;
+        }
+        /* nav */
+        nav h4 {
+            font-family: hiromisake;
+            color: beige;
+            font-size: 1.5rem;
+            text-align: center;
+            position:relative;
+            margin-top: .5vw;
+        }
+        nav .links {
+            font-family: hiromisake;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            font-size: .8rem;
+            margin-bottom: 3vw;
+            margin-right: 15vw;
+            margin-left: 15vw;
+        }
+        /* main */
+        .fotosushi {
+            width: 80%;
+            margin: 0 10% 0 10%;
+        }
+        
         main h2 {
-          font-size: medium;
+          font-size: 2rem;
         }
         main h3 {
-            font-size: small;
+            font-size: 1.5rem;
         }
         main .content, li {
-            font-size: small;
+            font-size: .9rem;
+            text-align: left;
         }
-        iframe {
-          width: 50%;
-          height: auto;
-          margin: 0 25% 0 25%;
+        #map {
+            width: 80%;
+            margin: 0 10% 0 10%;
+          }
+          #video {
+              width: 80%;
+              margin: 0 10% 0 10%;
+              height: 40vh
+        }
+        /* footer */
+        footer {
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            
+        }
+        footer iframe {
+            width: 30% ;
+        }
+        footer p {
+            width: 30%;
+            text-align: center;
+            color: beige;
+            font-style: italic;
+            font-size: 1rem;
+        }
+        .redsocial {
+            width: 40%;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .redsocial a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            width: 6vw;
+            height: 6vw;
+            line-height: 6vw;
+            text-align: center;
+            background: #314652;
+            color: #f1f1f1;
+            border-radius: 50%;
+            box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+            transition: all .4s ease-in-out;
+            padding: 5%;
+            margin-top: 10vw;
+            }
+            footer button {
+                width: 25vw;
+                height: 10vw;
+                background-color:#314652 ;
+                color: #f1f1f1;
+                font-family: hiromisake;
+                font-size: .8rem;
+                box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+            }
+
+
+}
+
+@media only screen and (min-width: 477px) and (max-width: 767px) {
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+
+       /* header */
+        .flex-item2 h1 {
+            font-size: 2.5rem;
+            font-family: hiromisake;
+            text-align: center;
+        }
+        .flex-item1 {
+            width: 25%;
+        }
+        
+        .logosushi { 
+            height: auto;
+        
+            }
+        
+        .flex-item3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        header .flex-item3 a {
+            width: 7vw;
+            height: 7vw;
+            line-height: 7vw;
+            font-size: 1.5rem;
+        }
+        /* nav */
+        nav h4 {
+            font-family: hiromisake;
+            color: beige;
+            font-size: 1.5rem;
+            text-align: center;
+            position:relative;
+            margin-top: .5vw;
+        }
+        nav .links {
+            font-family: hiromisake;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 3vw;
+            margin-right: 15vw;
+            margin-left: 15vw;
+        }
+        /* main */
+        .fotosushi {
+            width: 80%;
+            margin: 0 10% 0 10%;
+        }
+              
+        main h2 {
+          font-size: 2rem;
+
+        }
+        main h3 {
+            font-size: 1.5rem;
+        }
+        main .content, li {
+            font-size: 1rem;
+            text-align: left;
+            
+        }
+        #map {
+            width: 80%;
+            margin: 0 10% 0 10%;
+          }
+          #video {
+              width: 80%;
+              height: 50vh;
+              margin: 0 10% 0 10%;
+        }
+        /* footer */
+        footer {
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        footer button {
+            width: 20vw;
+            height: 10vw;
+            background-color:#314652 ;
+            color: #f1f1f1;
+            font-family: hiromisake;
+            font-size: 1rem;
+            box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
         }
     
+        .redsocial a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            width: 8vw;
+            height: 8vw;
+            line-height: 8vw;
+            text-align: center;
+            background: #314652;
+            color: #f1f1f1;
+            border-radius: 50%;
+            box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+            transition: all .4s ease-in-out;
+        }
+            
+        
+    }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            header {
+                align-items: center;
+            }
+            header h1 {
+                font-size: 3rem;
+                font-family: hiromisake;
+                text-align: center;
+            }
+            .flex-item1 {
+                width: 25%;
+            }
+            
+            .logosushi { 
+                height: auto;
+            }
+            
+            .flex-item3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+    
+            }
+            header .flex-item3 a {
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                font-size: 1.5rem;
+            }
+            /* nav */
+            nav h4 {
+                font-family: hiromisake;
+                color: beige;
+                font-size: 2rem;
+                text-align: center;
+                position:relative;
+                margin-top: .5vw;
+            }
+            nav .links {
+                font-family: hiromisake;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
+                font-size: 1.5rem;
+                margin-bottom: 3vw;
+                margin-right: 15vw;
+                margin-left: 15vw;
+            }
+            /* main */
+           
+            .fotosushi { 
+                width: 80%;
+                margin: 0 10% 0 10%;
+            }
+          
+            main h2 {
+              font-size: 2rem;
+            }
+            main h3 {
+                font-size: 1.5rem;
+            }
+            main .content, li {
+                font-size: 1rem;
+            }
+            #map {
+              width: 60%;
+              margin: 0 20% 0 20%;
+            }
+            #video {
+                width: 70%;
+                height: 50vh;
+                margin: 0 15% 0 15%;
+            }
+            /* footer */
+            footer {
+                align-items: center;
+                justify-content: space-between;
+                
+            }
+            footer p {
+                width: 15%;
+                text-align: center;
+                color: beige;
+                font-style: italic;
+                font-size: 1rem;
+            }
+        
+            .redsocial a {
+                text-decoration: none;
+                font-size: 2rem;
+                width: 6vw;
+                height: 6vw;
+                line-height: 6vw;
+                text-align: center;
+                background: #314652;
+                color: #f1f1f1;
+                border-radius: 50%;
+                box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+                transition: all .4s ease-in-out;
+            }
+                
+            
+        }
