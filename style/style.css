@@ -186,15 +186,11 @@ li {
 
     font-size: 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
 }
 
-
 .btn-wsp {
-
     position: fixed;
-    width: 60px;
+    width: 60px ;
     height: 60px;
     line-height: 60px;
     bottom: 25px;
@@ -287,6 +283,7 @@ footer p {
     font-size: 2rem ;
     box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
     text-align: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 575px) {
@@ -409,7 +406,7 @@ footer p {
     /* card */
     .card {
         width: 40%;
-        margin: 0 30% 0 30%;
+        margin: 3vw 30% 0 30%;
         
     }
     
@@ -422,12 +419,12 @@ footer p {
 
     footer iframe {
         height: 20vh;
-        ;
+        
     }
 
     .redsocial {
         width: 40%;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
 
     }
@@ -445,20 +442,20 @@ footer p {
         box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, 0.523);
         transition: all .4s ease-in-out;
         padding: 5%;
-        margin-top: 2vw;
+        
     }
-
+   
     .btn {
         width: 25vw;
-        height: 10vw;
+        height: 8vw;
         text-align: center;
         background-color: #123950;
         color: #f1f1f1;
         font-family: hiromisake;
         font-size: .8rem;
         box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
-        
-    
+        align-items: center;
+
     }
 
 
