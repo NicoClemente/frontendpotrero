@@ -1,0 +1,766 @@
+/* fuente */
+@font-face {
+    font-family: hiromisake;
+    src: url("../fonts/HIROMISAKE400.ttf")
+}
+
+.switch input {
+
+    width: 2vw;
+    height: 2vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.flex-item1 {
+    width: 15%;
+}
+
+.logosushi {
+    width: 15%;
+    margin: 1%;
+}
+
+.logocelu {
+    display: none;
+}
+
+.logodark {
+    display: none;
+}
+
+.flex-item2 {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: hiromisake;
+    color: red;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.flex-item3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item3 a {
+    margin-top: 1vw;
+    margin-right: 1.5vw;
+    font-size: 1.8rem;
+    text-decoration: none;
+    width: 5vw;
+    height: 5vw;
+    line-height: 5vw;
+    text-align: center;
+    background: #314652;
+    color: red;
+    border-radius: 30%;
+    box-shadow: .1vw .1vw .5vw .4vw rgba(0, 0, 0, .5);
+    
+
+}
+
+.flex-item3 a:hover {
+    transform: scale(1.2);
+    
+}
+
+nav {
+    width: 60%;
+    margin: 5% 20% 5% 20%;
+    border-style: solid;
+    border-width: .4vw;
+    border-color: #314652;
+    box-shadow: .1vw .1vw .5vw .4vw rgba(0, 0, 0, .5);
+    justify-content: center;
+    ;
+
+
+}
+
+nav h4 {
+    font-family: hiromisake;
+    color: red;
+    font-size: 2.3rem;
+    text-align: center;
+    position: relative;
+    margin-top: .5vw;
+
+}
+
+nav .links {
+    font-family: hiromisake;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3vw;
+    margin-right: 15vw;
+    margin-left: 15vw;
+
+}
+
+a:link {
+    text-decoration: none;
+    color: red;
+    border: 0px;
+}
+
+a:active {
+    color: red;
+    border: 0px;
+}
+
+a:visited {
+    color: red;
+    border: 0px;
+}
+
+.links a:hover {
+    transform: scale(1.2);
+}
+
+main {
+
+    width: 100%;
+
+}
+
+.fotosushi {
+    width: 60%;
+    margin: 2% 20% 0 20%;
+    position: relative;
+    border-radius: 2%;
+}
+
+body {
+    background: url(../img/fondodark2.jfif);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    margin: 0 0 0 0;
+
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3rem;
+    color: red;
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: red;
+    margin: 0 25% 0 25%;
+
+}
+
+#map {
+    position: relative;
+    margin: 0 25% 0 25%;
+    width: 50%;
+}
+
+#video {
+    position: relative;
+    width: 70%;
+    height: 80vh;
+    margin: 0 15% 0 15%;
+}
+
+.content,
+li {
+    width: 70%;
+    margin: 0 12% 0 15%;
+    text-align: justify;
+    color: red;
+
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #333;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 300ms ease;
+
+}
+
+.btn-wsp a {
+    color: beige;
+}
+
+/* cards */
+.card {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    background-color: #314652;
+    border-style: solid;
+    border-width: .4vw;
+    border-color: #314652;
+    box-shadow: .1vw .1vw .5vw .4vw rgba(0, 0, 0, .5);
+    text-align: center;
+
+}
+
+.card-group {
+    margin: 1% 1% 4% 1%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-group a:hover {
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+/* Pie de pagina */
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: .4vw;
+    border-color: #314652;
+    box-shadow: .1vw .1vw .5vw .4vw rgba(0, 0, 0, .5);
+}
+
+footer iframe {
+    width: 25%;
+    margin: 1%;
+}
+
+footer {
+    align-items: center;
+}
+
+#copyright {
+    width: 25%;
+    text-align: center;
+    margin: 1%;
+}
+
+.redsocial {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#copyright:hover {
+    z-index: 100;
+}
+
+.redsocial a {
+    text-decoration: none;
+    font-size: 2rem;
+    width: 6vw;
+    height: 6vw;
+    line-height: 6vw;
+    text-align: center;
+    background: #314652;
+    color: red;
+    border-radius: 50%;
+    box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.redsocial a:hover {
+    transform: scale(1.2);
+}
+
+
+.btn {
+    width: 18vw;
+    height: 7vw;
+    background-color: #314652;
+    color: red;
+    border-color: #123950;
+    font-family: hiromisake;
+    font-size: 2rem;
+    box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+    text-align: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 575px) {
+
+    /* header */
+
+    h1 {
+        font-size: 2rem;
+        font-family: hiromisake;
+        text-align: center;
+
+    }
+
+    .flex-item1 {
+        width: 15%;
+        display: flex;
+    }
+
+    .logosushi {
+        display: none;
+
+    }
+
+    .logodark {
+        display: flex;
+        width: 15%;
+
+    }
+
+    .flex-item3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    header .flex-item3 a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1.5rem;
+    }
+
+    /* nav */
+    nav {
+        border-width: .8vw;
+        border-radius: 2%;
+    }
+
+    nav h4 {
+        font-family: hiromisake;
+        font-size: 1.2rem;
+        text-align: center;
+        position: relative;
+        margin-top: .5vw;
+    }
+
+    nav .links {
+        font-family: hiromisake;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-size: .8rem;
+        margin-bottom: 3vw;
+        margin-right: 15vw;
+        margin-left: 15vw;
+      
+    }
+
+    /* main */
+    body {
+        background-image: url(../img/fondodark2.jfif);
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+        margin: 0 0 0 0;
+    }
+
+    .fotosushi {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    main h3 {
+        font-size: 1.5rem;
+    }
+
+    main .content,
+    li {
+        width: 80%;
+        margin: 0 10% 0 10%;
+        font-size: .9rem;
+        text-align: left;
+    }
+
+    #map {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+
+    #video {
+        width: 80%;
+        margin: 0 10% 0 10%;
+        height: 40vh
+    }
+
+    /* card */
+    .card {
+        width: 40%;
+        margin: 3% 30% 0 30%;
+
+    }
+
+    /* footer */
+    footer {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    footer iframe {
+        height: 20vh;
+
+    }
+
+    .redsocial {
+        width: 40%;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .redsocial a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        width: 8vw;
+        height: 8vw;
+        line-height: 5vw;
+        text-align: center;
+        background: #123950;
+        color: red;
+        border-radius: 50%;
+        box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, 0.523);
+        transition: all .4s ease-in-out;
+        padding: 5%;
+
+    }
+
+    .btn {
+        width: 25vw;
+        height: 8vw;
+        text-align: center;
+        background-color: #123950;
+        color: red;
+        font-family: hiromisake;
+        font-size: .8rem;
+        box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+        align-items: center;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+
+    /* header */
+    h1 {
+        font-size: 2.5rem;
+        font-family: hiromisake;
+        text-align: center;
+    }
+
+    .flex-item1 {
+        width: 25%;
+    }
+
+    .logosushi {
+        height: auto;
+
+    }
+
+    .flex-item3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    header .flex-item3 a {
+        width: 7vw;
+        height: 7vw;
+        line-height: 7vw;
+        font-size: 1.5rem;
+    }
+
+    /* nav */
+    nav h4 {
+        font-family: hiromisake;
+        font-size: 1.5rem;
+        text-align: center;
+        position: relative;
+        margin-top: .5vw;
+    }
+
+    nav .links {
+        font-family: hiromisake;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 3vw;
+        margin-right: 15vw;
+        margin-left: 15vw;
+    }
+
+    /* main */
+
+    .fotosushi {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+
+    main h2 {
+        font-size: 2rem;
+
+    }
+
+    main h3 {
+        font-size: 1.5rem;
+    }
+
+    main .content,
+    li {
+        font-size: 1rem;
+        text-align: left;
+
+    }
+
+    #map {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+
+    #video {
+        width: 80%;
+        height: 50vh;
+        margin: 0 10% 0 10%;
+    }
+
+    /* card */
+    .card {
+        width: 40%;
+        margin: 3% 30% 0 30%;
+
+    }
+
+    /* footer */
+    footer {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer iframe {
+        height: 20vh;
+    }
+
+    .btn {
+        width: 20vw;
+        height: 10vw;
+        background-color: #314652;
+        color: red;
+        font-family: hiromisake;
+        font-size: 1rem;
+        box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+    }
+
+    .redsocial a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        width: 8vw;
+        height: 8vw;
+        line-height: 6vw;
+        text-align: center;
+        background: #314652;
+        color: red;
+        border-radius: 50%;
+        box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+        padding: .8vw;
+    }
+
+    .redsocial {
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    header {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-family: hiromisake;
+        text-align: center;
+    }
+
+    .flex-item1 {
+        width: 25%;
+    }
+
+    .logosushi {
+        height: auto;
+    }
+
+    .flex-item3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    
+    header .flex-item3 a {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 1.5rem;
+    }
+
+    /* nav */
+    nav h4 {
+        font-family: hiromisake;
+        color: red;
+        font-size: 2rem;
+        text-align: center;
+        position: relative;
+        margin-top: .5vw;
+    }
+
+    nav .links {
+        font-family: hiromisake;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 3vw;
+        margin-right: 15vw;
+        margin-left: 15vw;
+    }
+
+
+    /* main */
+
+    .fotosushi {
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    main h3 {
+        font-size: 1.5rem;
+    }
+
+    main .content,
+    li {
+        font-size: 1rem;
+    }
+
+    #map {
+        width: 60%;
+        margin: 0 20% 0 20%;
+    }
+
+    #video {
+        width: 70%;
+        height: 50vh;
+        margin: 0 15% 0 15%;
+    }
+
+    /* card */
+    .card {
+        width: 70%;
+        margin: 3% 15% 0 15%;
+
+    }
+
+    /* footer */
+    footer {
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .btn {
+        width: 18vw;
+        height: 7vw;
+        background-color: #314652;
+        color: red;
+        font-family: hiromisake;
+        font-size: 1.2rem;
+        box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+    }
+
+    .redsocial a {
+        text-decoration: none;
+        font-size: 2rem;
+        width: 7vw;
+        height: 7vw;
+        line-height: 5vw;
+        text-align: center;
+        background: #314652;
+        color: red;
+        border-radius: 50%;
+        box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+        padding: 1vw;
+    }
+
+    .redsocial {
+        flex-direction: row;
+    }
+
+}

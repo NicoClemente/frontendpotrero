@@ -1,7 +1,12 @@
-/* fuente */
 @font-face {
     font-family: hiromisake;
     src: url("../fonts/HIROMISAKE400.ttf")
+}
+
+.switch input {
+
+    width: 2vw;
+    height: 2vw;
 }
 
 header {
@@ -25,10 +30,15 @@ header {
     display: none;
 }
 
+.logodark {
+    display: none;
+}
+
 .flex-item2 {
     width: 70%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 
@@ -44,7 +54,8 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 15%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex-item3 a {
@@ -60,7 +71,6 @@ h1 {
     color: #f1f1f1;
     border-radius: 30%;
     box-shadow: .1vw .1vw .5vw .4vw rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
 
 }
 
@@ -225,6 +235,13 @@ li {
     align-items: center;
 }
 
+.card-group a:hover {
+    transform: scale(1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
 
 /* Pie de pagina */
 footer {
@@ -245,10 +262,13 @@ footer iframe {
 footer {
     align-items: center;
 }
-
-footer p {
+#copyright {
     width: 25%;
     text-align: center;
+    margin: 1%;
+}
+#copyright:hover {
+    z-index: 100;
 }
 
 .redsocial {
@@ -290,9 +310,9 @@ footer p {
 
 @media only screen and (min-width: 280px) and (max-width: 575px) {
     .btn-wsp {
-        width: 63px;
-        height: 63px;
-        line-height: 66px;
+        width: 10vw;
+        height: 10vw;
+        line-height: 10vw;
     }
 
     /* header */
@@ -443,11 +463,10 @@ footer p {
         color: #f1f1f1;
         border-radius: 50%;
         box-shadow: .2vw .2vw .5vw rgba(0, 0, 0, 0.523);
-        transition: all .4s ease-in-out;
         padding: 5%;
 
     }
-
+    
     .btn {
         width: 25vw;
         height: 8vw;
@@ -465,6 +484,7 @@ footer p {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
     .btn-wsp {
         width: 63px;
         height: 63px;
@@ -607,6 +627,7 @@ footer p {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+
     header {
         align-items: center;
     }
@@ -733,9 +754,8 @@ footer p {
         transition: all .4s ease-in-out;
         padding: 1vw;
     }
+}
 
-    .redsocial {
-        flex-direction: row;
-    }
-
+.redsocial {
+    flex-direction: row;
 }
